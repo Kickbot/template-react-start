@@ -1,0 +1,34 @@
+{
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "transform-inline-environment-variables",
+    "@babel/plugin-syntax-dynamic-import",
+
+    "@babel/plugin-transform-arrow-functions"
+  ],
+  "presets": [
+    "@babel/react",
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": { "version": 3, "proposals": false },
+        "modules": false
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}
