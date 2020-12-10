@@ -13,7 +13,8 @@ import 'core-js/stable/url-search-params'
 import 'whatwg-fetch'
 /* eslint-enable import/no-unassigned-import */
 
-import './index.css';
+import './theme.css'
+import './index.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'

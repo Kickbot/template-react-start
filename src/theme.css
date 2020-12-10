@@ -1,0 +1,102 @@
+:root {
+  /* BRAND */
+  --color-brand: #3955b0;
+  --color-sky: #658de6;
+  --color-navy: #0c1c79;
+  --color-black: #1a223d;
+  /* GREY */
+  --color-gray-6: #60667b;
+  --color-gray-5: #b0b5c3;
+  --color-gray-4: #c8ccd7;
+  --color-gray-3: #dee0e7;
+  --color-gray-2: #eeeff2;
+  --color-gray-1: #f9fafb;
+  /* WHITE */
+  --color-white: #ffffff;
+  --color-white-negative: #1a223d;
+  --color-white-negavite-light: #60667b;
+  /* GREEN */
+  --color-green-light: #a5e020;
+  --color-green-dark: #6bc604;
+  --color-green-negative: #1a223d;
+  /* YELLOW */
+  --color-yellow-light: #f8e71c;
+  --color-yellow-dark: #f1d103;
+  --color-green-negative: #1a223d;
+  /* RED */
+  --color-red-light: #dd1831;
+  --color-red-dark: #bf0209;
+  --color-red-negative: #ffffff;
+  /*
+      FONTS ---
+  */
+  --font-size-12: 0.75rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+  --font-size-32: 2rem;
+  --font-size-48: 3rem;
+
+  --box-shadow: 0 0.25rem 2rem 0 rgba(26, 34, 61, 0.2);
+}
+
+html {
+  --content-max-width: 70rem;
+  --aside-width: 24rem;
+  --main-width: calc(var(--content-max-width) - var(--aside-width));
+  --media-phone-width: 480px;
+  --media-desktop-min-width: 1025px;
+  --color-success: #99ffd7;
+  --color-error: #ff4c79;
+  --color-blue: #0059b3;
+  --color-dark-blue: #00194d;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Muli, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5rem;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body > div {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100%;
+  position: relative;
+}
+
+button,
+select,
+input,
+textarea {
+  font: inherit;
+}
+
+@custom-media --phone (max-width: 575px); /* in case of changes, change ui/responsive/index.js */
+
+@custom-media --tablet (min-width: 576px);
+@custom-media --tablet- (max-width: 767px);
+@custom-media --tablet-only (min-width: 576px) and (max-width: 767px);
+@custom-media --tablet-max (max-width: 1199px);
+
+@custom-media --desktop-min (min-width: 768px);
+@custom-media --desktop (min-width: 992px);
+@custom-media --desktop-big (min-width: 1140px);
+
+@custom-media --lt-desktop (max-width: 769px);
+@custom-media --desktop-small (min-width: 800px) and (max-width: 1439px);
+@custom-media --desktop- (min-width: 1200px);
+
+@custom-media --hover (hover);
