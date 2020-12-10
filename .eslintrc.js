@@ -3,7 +3,7 @@ module.exports = {
   root: true,
   plugins: ['import', 'react', 'jsx-a11y', 'react-hooks'],
   extends: [
-    'eslint:recommended',
+    // 'eslint:recommended',
     'plugin:react/all',
     'plugin:jsx-a11y/recommended',
     'plugin:import/errors',

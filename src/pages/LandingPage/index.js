@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Landing.css';
 
-const LandingPage = () => {
+function LandingPage() {
   return (
     <div className="landing-wrap">
       tut landing
+      <Link to='#'>test</Link>
     </div>
   )
 }

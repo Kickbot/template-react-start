@@ -172,7 +172,16 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: paths.html,
     }),
-    new CopyWebpackPlugin([{ context: path.resolve(__dirname, 'public'), from: '**/*' }]),
+    new CopyWebpackPlugin( 
+      {
+        patterns: [ 
+          { 
+            context: path.resolve(__dirname, 'public'),
+            from: '**/*' 
+          }
+        ]
+      }
+    ),
     process.env.ANALYZER === 'true' && new BundleAnalyzerPlugin(),
   ].filter(Boolean),
 
