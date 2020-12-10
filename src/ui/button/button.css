@@ -1,0 +1,17 @@
+.button {
+  border-color: transparent;
+  color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color, background-color, border-color, box-shadow 0.15s ease-in-out;
+  user-select: none;
+  cursor: pointer;
+}
+.button:focus,.button:active {
+  border-color: transparent;
+  outline: none;
+}
+
