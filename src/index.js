@@ -20,13 +20,15 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 
-import { store } from './store'
+import createStore from './store'
 
 import routes  from './const/routes'
 // import Header from './pages/Header'
 import LandingPage from './pages/LandingPage';
 
 
+
+export const store = createStore()
 
 export const mainElement = document.createElement('div')
 mainElement.className = 'main'
