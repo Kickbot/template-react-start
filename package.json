@@ -1,13 +1,13 @@
 {
-  "name": "crowdfunding-ui",
+  "name": "",
   "version": "0.0.1",
-  "description": "Prospect Equity",
+  "description": "",
   "main": "src/index.js",
-  "repository": "bitbucket.org/dynamo-ny/crowdfunding-ui.git",
+  "repository": "",
   "keywords": [],
-  "author": "Eugene Syrota <esyrota@dynamo-ny.com>",
+  "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/dynamo-ny/crowdfunding-ui#readme",
+  "homepage": "",
   "scripts": {
     "test": "jest --config=jest.config.js",
     "start": "webpack serve",
